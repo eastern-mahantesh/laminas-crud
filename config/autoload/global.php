@@ -13,5 +13,17 @@
  */
 
 return [
-    // ...
+    'doctrine' => [
+        'connection' => [
+            'orm_default' => [
+//                'driver' => PDOMySqlDriver::class,
+                'params' => [
+                    'host' => 'localhost',
+                    'user' => 'root',
+                    'password' => 'root',
+                    'dbname' => 'laminas'
+                ]
+            ]
+        ]
+    ]
 ];
